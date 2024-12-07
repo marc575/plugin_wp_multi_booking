@@ -1,0 +1,93 @@
+.degb-admin-wrap {
+    margin: 20px;
+}
+
+.degb-admin-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.degb-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.degb-card h2 {
+    color: #2271b1;
+    margin-top: 0;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #f0f0f1;
+}
+
+.degb-stats-overview {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.degb-stat-item {
+    text-align: center;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 4px;
+    border-left: 4px solid #2271b1;
+}
+
+.degb-stat-number {
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    color: #2271b1;
+    margin-bottom: 5px;
+}
+
+.degb-stat-label {
+    color: #50575e;
+    font-size: 14px;
+}
+
+table.wp-list-table {
+    margin-top: 15px;
+}
+
+.wp-list-table th {
+    font-weight: 600;
+    color: #1d2327;
+}
+
+.button {
+    background: #2271b1;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: #135e96;
+}
+
+.form-table th {
+    width: 200px;
+}
+
+.degb-admin-wrap .notice {
+    margin: 20px 0;
+}
+
+@media screen and (max-width: 782px) {
+    .degb-admin-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .degb-stats-overview {
+        grid-template-columns: 1fr;
+    }
+}
